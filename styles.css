@@ -1,0 +1,190 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+}
+
+h3 {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.ratings h3 {
+    color: var(--very-dark-magenta);
+}
+
+.big-heading p {
+    color: var(--dark-grayish-magenta);
+}
+
+.buyer {
+    color: var(--soft-pink);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+p {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.top h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.top p {
+    font-size: .9rem;
+}
+
+.customer-rating {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-grayish-magenta);
+    padding: .7rem 1.5rem;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.rating-img {
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+
+
+.bottom-ratings {
+    margin-top: 50px;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+.rating-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 299px;
+    height: 220px;
+    background-color: var(--very-dark-magenta);
+    margin-right: 1rem;
+    padding: 20px 15px;
+    border-radius: 10px;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: auto;
+    border-radius: 100px;
+    margin-right: 1.5rem;
+    margin-top: .8rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.rating-card-2 {
+    margin-top: 1rem;
+}
+
+.rating-card-3 {
+    margin-top: 2rem;
+}
+
+@media (max-width: 374px) {
+    .top h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+    }
+
+    .top p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rating-2nd {
+        margin-left: 0;
+    }
+
+    .rating-3rd {
+        margin-left: 0;
+    }
+
+    .rating-img {
+        margin-right: 0;
+    }
+
+    .customer-rating {
+        justify-content: center;
+    }
+
+    .rating-card {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .bottom-ratings {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: bottom;
+    }
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
